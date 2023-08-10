@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/setanal/static/css/main.860d89c1.css",
-    "main.js": "/setanal/static/js/main.bdf7d0e6.js",
+    "main.js": "/setanal/static/js/main.fa36f437.js",
     "index.html": "/setanal/index.html",
     "main.860d89c1.css.map": "/setanal/static/css/main.860d89c1.css.map",
-    "main.bdf7d0e6.js.map": "/setanal/static/js/main.bdf7d0e6.js.map"
+    "main.fa36f437.js.map": "/setanal/static/js/main.fa36f437.js.map"
   },
   "entrypoints": [
     "static/css/main.860d89c1.css",
-    "static/js/main.bdf7d0e6.js"
+    "static/js/main.fa36f437.js"
   ]
 }
