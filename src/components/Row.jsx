@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import axios from 'axios';
-import Movie from './Movie';
+import React, { useEffect, useState } from "react";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import axios from "axios";
+import Movie from "./Movie";
 
 const Row = ({ title, fetchURL, rowID }) => {
   const [movies, setmovies] = useState([]);
@@ -13,12 +13,12 @@ const Row = ({ title, fetchURL, rowID }) => {
   }, [fetchURL]);
 
   const slideLeft = () => {
-    var slider = document.getElementById('slider' + rowID);
+    var slider = document.getElementById("slider" + rowID);
     slider.scrollLeft = slider.scrollLeft - 500;
   };
 
   const slideRight = () => {
-    var slider = document.getElementById('slider' + rowID);
+    var slider = document.getElementById("slider" + rowID);
     slider.scrollLeft = slider.scrollLeft + 500;
   };
 
@@ -32,8 +32,8 @@ const Row = ({ title, fetchURL, rowID }) => {
           size={40}
         />
         <div
-          id={'slider' + rowID}
-          className="flex w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
+          id={"slider" + rowID}
+          className=" w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
         >
           {movies.map((item, id) => (
             <Movie key={id} item={item} />
